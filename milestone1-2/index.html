@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Interactive Resume</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 150px;
+}
+
+.resume-container {
+    display: flex;
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section Styling */
+.left-section {
+    background-color: #085a8a;
+    color: white;
+    padding: 20px;
+    width: 35%;
+    text-align: center;
+    border-right: 5px solid black;
+}
+
+.profile-picture{
+    width: 150px;
+    height: 150px;
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 10px 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 18px;
+    padding: 2%;
+    margin: 20px 0 10px;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+ul {
+    list-style-type: fill round;
+    padding: 10;
+    margin: 10px 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Right Section Styling */
+.right-section {
+    padding: 20px;
+    width: 65%;
+}
+
+button {
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #4addfe;
+}
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="left-section">
+            <img src="IMG-20201114-WA0024.jpg" alt="Profile Picture" class="profile-picture">
+            <section id="objective">
+                <h3 style="color: white">Career Objective</h3>
+                <p style="text-align: justify; hyphens: auto;">To secure an employment opportunity with a progressive organisation, where i can utilize my professional skills and konwledge to the maximun add value in the growth of the organisation.</p>
+            </section>
+                
+            <section id="certification">
+                <h3 style="color: white;">Certification</h3>
+                <p><b>Artificial Intelligence, Web 3.0 & Metaverse:</b> From Gevernor House Karachi (Ongoing) </p>
+            </section>
+        </div>
+        <div class="right-section">
+            <h1>Static Interactive Resume</h1>
+            <section id="personal-information">
+                <h3>Personal Information</h3>
+                <P><b>Name:</b> Zeeshan Tariq s/o Tariq Mehmood</P>
+                <P><b>Phone:</b> 0336-2205387</P>
+                <P><b>Email:</b> <a href="mailto:zzzzz.ttttt91@gmail.com">zzzzz.ttttt91@gmail.com</a></P>
+                <P><b>Linkedin:</b></P>
+            </section>
+
+            <section id="eduction">
+                <h3>Education</h3>
+                <P><b>Bachelors:</b> B.COM From University of Karachi in the year 2013</P>
+                <P><b>Intermediate:</b> Intermediate from Karachi Board</P>
+                <P><b>Matric:</b> in Science Group From C.D.G.K Boys Secondry School Karachi in the year 2006</P>
+            </section>
+
+            <section id="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>MS Office</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Typescipt</li>
+                    <li>Javascipt</li>
+                </ul>
+            </section>
+
+            <section id="work-experience">
+                <h3>Work Experience</h3>
+                <P><b>Banking:</b> working in United Bank limited from 2015 to 2019 as Processing Officer O.G-III</P>
+                <P><b>Sindh Police:</b> Now working in Sindh police since 2019 to till now</P>
+            </section>
+
+            <button id="toggle-skills"><b>Hide/Show Skills</b></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
